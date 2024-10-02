@@ -8,5 +8,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int c = scanner.nextInt();
         System.out.println("Số bạn vừa nhập là " + c);
+
+        String json = """
+                {
+                  "name": "John",
+                  "age": 30
+                }
+                """;
+        System.out.println(json);
+
     }
 }
