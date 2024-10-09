@@ -1,8 +1,10 @@
 package ss3_method;
 
+import ss5_access_modifier.Student;
+
 import java.util.Scanner;
 
-public class Demo {
+public class Demo extends Student{
     String name;
     int age;
     static String className =  "C0724M1";
@@ -23,5 +25,7 @@ public class Demo {
         }else {
             System.out.println("Not Prime number");
         }
+        Student student= new Student();
+        demo.study();
     }
 }
