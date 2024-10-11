@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Student {
     private int id;
     private String name;
-    private static String school;
+    public static String school;
 
     public Student() {
     }
