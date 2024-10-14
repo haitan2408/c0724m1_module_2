@@ -3,7 +3,7 @@ package ss6_inheritance;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Person {
+public abstract class Person {
     private int id;
     private String name;
     private String address;
@@ -41,11 +41,7 @@ public class Person {
         this.address = address;
     }
 
-    public static void main(String[] args) {
-        Person person = new Person();
-        Person person1 = new Person();
-        System.out.println(person);
-    }
+    public abstract void work();
 
     @Override
     public boolean equals(Object o) {
