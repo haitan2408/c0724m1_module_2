@@ -33,20 +33,25 @@ public class Student extends Person implements IPerson,IAnimal{
     public void setClassName(String className) {
         this.className = className;
     }
+    
 
     public static void main(String[] args) {
         String a = "123";
         String b = "123";
 //        String pool
 //        String vừa có tính nguyên thủy, vừa có tính đối tượng
-        System.out.println(a.equals(b));
-        Student student = new Student();
-        Student student1 = new Student();
-        System.out.println(student.equals(student1));
+        extracted(a, b);
         // Override equals
 
         IAnimal student3 = new Student();
         IPerson student2 = new Student();
+    }
+
+    public static void extracted(String a, String b) {
+        System.out.println(a.equals(b));
+        Student student = new Student();
+        Student student1 = new Student();
+        System.out.println(student.equals(student1));
     }
 
     @Override

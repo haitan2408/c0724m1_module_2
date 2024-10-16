@@ -8,7 +8,7 @@ public class StudentLevel1 extends Student{
 
     public StudentLevel1(int id, String name, String address, double point, String className, boolean isBanTru) {
         super(id, name, address, point, className);
-        super.getId();
+        super.getCode();
         this.isBanTru = isBanTru;
     }
 }

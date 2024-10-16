@@ -1,4 +1,4 @@
-package ss6_inheritance;
+package ss8_clean_code.entity;
 
 import java.util.Objects;
 
@@ -40,7 +40,6 @@ public abstract class Person {
         this.address = address;
     }
 
-    public abstract void work();
 
     @Override
     public boolean equals(Object o) {
