@@ -20,6 +20,6 @@ class DemoSumTest {
         int a = Integer.valueOf("a");
         int b = Integer.MAX_VALUE;
         long result = DemoSum.sum(a, b);
-        assertEquals(4294967294l, result);
+            assertEquals(4294967294l, result);
     }
 }

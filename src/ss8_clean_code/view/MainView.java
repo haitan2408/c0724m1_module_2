@@ -3,6 +3,7 @@ package ss8_clean_code.view;
 import ss8_clean_code.controller.StudentController;
 import ss8_clean_code.entity.Student;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class MainView {
@@ -38,7 +39,7 @@ public class MainView {
         switch (choice) {
             case 1:
                 System.out.println("Hiển thị danh sách học sinh");
-                Student[] students = studentController.getAll();
+                List<Student> students = studentController.getAll();
                 for (Student student: students) {
                     System.out.println(student);
                 }
