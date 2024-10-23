@@ -23,11 +23,14 @@ public class Demo {
 //            System.out.println(i);
 //        }
         Set<String> set = new HashSet<>();
+        Set<Long> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
         set.add("Hai");
         set.add("Hoa");
         set.add("Huy");
         set.add("Huy");
         set.add("Nga");
+
         set.contains("123");
         for (String i : set) {
             System.out.println(i);
