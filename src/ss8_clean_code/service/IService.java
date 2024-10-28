@@ -17,4 +17,5 @@ public interface IService<T>{
     T findById(int id);
 
     List<T> findByName(String name);
+
 }

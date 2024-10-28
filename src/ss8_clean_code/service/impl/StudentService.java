@@ -4,6 +4,7 @@ import ss8_clean_code.entity.Student;
 import ss8_clean_code.repository.StudentRepository;
 import ss8_clean_code.service.IStudentService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class StudentService implements IStudentService {
@@ -37,6 +38,13 @@ public class StudentService implements IStudentService {
 
     @Override
     public List<Student> findByName(String name) {
-        return List.of();
+        List<Student> students = studentRepository.getAll();
+        List<Student> temp = new ArrayList<>();
+        for (Student student: students) {
+            if(student.getName().contains(name)) {
+                temp.add(student);
+            }
+        }
+        return temp;
     }
 }

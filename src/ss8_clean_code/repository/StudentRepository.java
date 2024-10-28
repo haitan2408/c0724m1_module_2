@@ -11,9 +11,9 @@ public class StudentRepository {
 
     static {
         students.add(new Student(1, "Nguyễn Văn A", "Hà Nội", 10, "C0724G1"));
-        students.add(new Student(2, "Nguyễn Văn A", "Hà Nội", 10, "C0724G1"));
-        students.add(new Student(3, "Nguyễn Văn A", "Hà Nội", 10, "C0724G1"));
-        students.add(new Student(4, "Nguyễn Văn A", "Hà Nội", 10, "C0724G1"));
+        students.add(new Student(2, "Nguyễn Văn B", "Hà Nội", 10, "C0724G1"));
+        students.add(new Student(3, "Nguyễn Văn C", "Hà Nội", 10, "C0724G1"));
+        students.add(new Student(4, "Nguyễn Văn D", "Hà Nội", 10, "C0724G1"));
     }
 
     public List<Student> getAll() {

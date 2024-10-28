@@ -13,4 +13,8 @@ public class StudentController {
         List<Student> students = studentService.getAll();
         return students;
     }
+
+    public List<Student> searchByName(String name) {
+        return studentService.findByName(name);
+    }
 }
