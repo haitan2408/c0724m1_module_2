@@ -17,4 +17,8 @@ public class StudentController {
     public List<Student> searchByName(String name) {
         return studentService.findByName(name);
     }
+
+    public void save(Student student) {
+        studentService.save(student);
+    }
 }

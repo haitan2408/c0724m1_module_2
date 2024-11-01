@@ -19,4 +19,8 @@ public class StudentRepository {
     public List<Student> getAll() {
         return students;
     }
+
+    public void save(Student s) {
+        students.add(s);
+    }
 }
