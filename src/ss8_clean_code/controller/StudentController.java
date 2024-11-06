@@ -21,4 +21,15 @@ public class StudentController {
     public void save(Student student) {
         studentService.save(student);
     }
+
+    public boolean isExistsStudent(int id) {
+        if( studentService.findById(id) != null) {
+            return true;
+        }
+        return false;
+    }
+
+    public void deleteById(int id) {
+        studentService.remove(id);
+    }
 }

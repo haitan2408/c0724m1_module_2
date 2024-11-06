@@ -1,8 +1,9 @@
 package ss8_clean_code.entity;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public abstract class Person {
+public abstract class Person implements Serializable {
     private long code;
     private String name;
     private String address;

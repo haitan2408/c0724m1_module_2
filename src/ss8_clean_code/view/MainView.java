@@ -62,7 +62,19 @@ public class MainView {
                     System.out.println("Sửa thông tin học sinh");
                     break;
                 case 4:
-                    System.out.println("Xóa học sinh");
+                    System.out.print("Nhập id cần xóa: ");
+                    int id = Integer.parseInt(scanner.nextLine());
+                    boolean isFind = studentController.isExistsStudent(id);
+                    if(!isFind) {
+                        System.out.println("Không tìm thấy student có id là "+ id);
+                    } else {
+                        System.out.println("Bạn có chắc muốn xóa hay không. Nhấn Y nếu đồng ý hoặc bất kỳ kí tự khác nếu không?");
+                        String isConfirm = scanner.nextLine();
+                        if(isConfirm.equalsIgnoreCase("y")) {
+                                studentController.deleteById(id);
+                            System.out.println("Xóa học sinh thành công");
+                        }
+                    }
                     break;
                 case 5:
                     System.out.println("Tìm kiếm học sinh theo tên");

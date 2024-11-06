@@ -28,11 +28,17 @@ public class StudentService implements IStudentService {
 
     @Override
     public void remove(int id) {
-
+        studentRepository.deleteById(id);
     }
 
     @Override
     public Student findById(int id) {
+        List<Student> students = studentRepository.getAll();
+        for (Student student: students) {
+            if(student.getCode() == id) {
+                return student;
+            }
+        }
         return null;
     }
 
