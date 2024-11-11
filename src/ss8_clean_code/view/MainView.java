@@ -95,10 +95,17 @@ public class MainView {
         int code = Integer.parseInt(scanner.nextLine());
         System.out.print("Mời bạn nhập tên: ");
         String name = scanner.nextLine();
+
+        while (!name.matches("^[A-Z][a-z ]{5,100}$")) {
+            System.out.println("Bạn nhập sai định dạng tên");
+            System.out.print("Mời bạn nhập lại: ");
+            name = scanner.nextLine();
+        }
         System.out.print("Mời bạn nhập địa chỉ: ");
         String address = scanner.nextLine();
         System.out.print("Mời bạn nhập điểm: ");
         double point = Double.parseDouble(scanner.nextLine());
+//        Định dạng chuỗi CXXXX(M|L)X-JV103
         System.out.print("Mời bạn nhập lớp: ");
         String className = scanner.nextLine();
         return new Student(code, name, address, point, className);
